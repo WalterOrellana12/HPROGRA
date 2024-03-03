@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using clase5.Data;
 
@@ -10,9 +11,11 @@ using clase5.Data;
 namespace clase5.Migrations
 {
     [DbContext(typeof(VideoGameContext))]
-    partial class VideoGameContextModelSnapshot : ModelSnapshot
+    [Migration("20240303211107_add_console_model")]
+    partial class add_console_model
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.2");

@@ -14,6 +14,7 @@ namespace clase5.Data
         {
         }
 
-        public DbSet<clase5.Models.Game> Game { get; set; } = default!;
+       public DbSet<Game> Game { get; set; } = default!;
+        public DbSet<GameConsole> Console { get; set; } = default!;
     }
 }
